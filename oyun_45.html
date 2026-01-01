@@ -1,0 +1,4 @@
+<!DOCTYPE html><html lang='tr'><head><meta charset='UTF-8'><title>Oyun 45</title>
+    <style>body { background:hsl(48, 50%, 29%); color:white; text-align:center; font-family:sans-serif; padding:50px; } 
+    button, input { padding:15px; margin:10px; border-radius:10px; border:none; cursor:pointer; }</style></head>
+    <body><h1>Hızlı Tıkla #45</h1><p>7 saniyede kaç kez tıklayabilirsin?</p><button style='padding:50px; font-size:30px; border-radius:50%' onclick='count()'>TIKLA</button><h2 id='c'>0</h2><script>let n=0; function count(){ n++; document.getElementById('c').innerText=n; } setTimeout(()=>{ alert('Süre bitti! Skorun: '+n); n=0; document.getElementById('c').innerText=0; }, 7000);</script><br><br><button onclick="window.location.href='index.html'">Menüye Dön</button></body></html>

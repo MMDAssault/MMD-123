@@ -1,0 +1,4 @@
+<!DOCTYPE html><html lang='tr'><head><meta charset='UTF-8'><title>Oyun 82</title>
+    <style>body { background:hsl(249, 50%, 28%); color:white; text-align:center; font-family:sans-serif; padding:50px; } 
+    button, input { padding:15px; margin:10px; border-radius:10px; border:none; cursor:pointer; }</style></head>
+    <body><h1>Denge Testi #82</h1><p>Çubuğu ortada tut!</p><input type='range' id='r' min='0' max='100' value='50'><script>setInterval(()=>{ let r=document.getElementById('r'); r.value = parseInt(r.value) + (Math.random()*10-5); if(r.value<=0 || r.value>=100){ alert('Denge bozuldu!'); location.reload(); } }, 100);</script><br><br><button onclick="window.location.href='index.html'">Menüye Dön</button></body></html>
